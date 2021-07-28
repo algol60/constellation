@@ -69,6 +69,7 @@ public abstract class ImportController<D> {
     protected boolean showAllSchemaAttributes;
     protected PluginParameters currentParameters;
     protected String attributeFilter = "";
+    
 
     // Attributes that exist in the graph or schema.
     private final Map<String, Attribute> autoAddedVertexAttributes;
@@ -412,6 +413,8 @@ public abstract class ImportController<D> {
     public void setAttributeFilter(final String attributeFilter) {
         this.attributeFilter = attributeFilter;
     }
+
+
 
     public String[] getCurrentColumns() {
         return currentColumns;

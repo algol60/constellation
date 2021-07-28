@@ -108,6 +108,7 @@ public class JsonIODialog {
         // create a text input dialog
         TextInputDialog td = new TextInputDialog();
         td.setTitle("Preference name");
+        td.getDialogPane().getStylesheets().add(JavafxStyleManager.getMainStyleSheet());
         // setHeaderText
         td.setHeaderText("Enter a name for the preference");
         Optional<String> result = td.showAndWait();

@@ -81,6 +81,6 @@ public class JavafxStyleManager {
 
     private static boolean hasFontChanged() {
         return FontUtilities.getApplicationFontSize() != currentFontSize
-                || FontUtilities.getApplicationFontFamily() != currentFontFamily;
+                || !FontUtilities.getApplicationFontFamily().equals(currentFontFamily);
     }
 }
